@@ -1,0 +1,24 @@
+@media print {
+    .img-block {
+        display: block !important;
+    }
+    .text- {
+        page-break-after: always;
+    }
+    .carousel,
+    .btn {
+        display: none !important;
+    }
+    p {
+        orphans: 4;
+    }
+}
+
+@page :first {
+    margin: 1cm;
+}
+
+.text-center{
+    text-align: center;
+    margin: 0 auto;
+}
