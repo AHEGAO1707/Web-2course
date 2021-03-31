@@ -1,0 +1,47 @@
+
+div{
+  color: white;
+}
+
+h1, h2{
+  text-align: center;
+  color: black;
+}
+.container{
+  display: flex;
+  grid-gap: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.item{
+  background-color: rgb(2, 0, 0);
+  height: 100px;
+  width: 100px;
+}
+
+.column-container{
+  flex-direction: column;
+}
+
+.container-justify-content{
+  justify-content: space-around;
+}
+
+.container-margin{
+  justify-content: center;
+}
+
+.container-margin div:nth-child(1){
+  margin-right: 30px;
+}
+
+.container-margin div:nth-child(2){
+  margin-left: 50px;
+}
+
+
+.container-reverse{
+  justify-content: center;
+  flex-direction: row-reverse;
+}
