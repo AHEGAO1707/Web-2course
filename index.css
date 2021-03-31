@@ -1,0 +1,103 @@
+.blue {
+    color: blue;
+}
+
+.selected {
+    color: blue;
+}
+
+/*.text-justify {*/
+/*    font-size: 24px;*/
+/*}*/
+
+.see-link,
+.img-block {
+    display: none;
+}
+
+.block-people{
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+@media (max-width: 550px) {
+    .block-people{
+        display: block;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .fontSize{
+        margin-bottom: 10px;
+    }
+}
+
+#button-size-small{
+    font-size: 13px;
+    border: none;
+}
+
+#button-size-middle{
+    font-size: 18px;
+    border: none;
+}
+
+#button-size-large{
+    font-size: 23px;
+    border: none;
+}
+
+#button-color-white{
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#button-color-black{
+    background-color: black;
+    color: white;
+    border: black solid 1px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+#button-color-multicolored{
+    background-color: #b700ff;
+    color: white;
+    border: #b700ff solid 1px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+
+.smallSize{
+    font-size: 15px;
+}
+
+.middleSize{
+    font-size: 20px;
+}
+
+.largeSize{
+    font-size: 25px;
+}
+
+.multicoloredColor{
+    background-color: #b700ff;
+    color: white;
+}
+
+.whiteColor{
+    background-color: white;
+    color: black;
+}
+
+.blackColor{
+    background-color: black;
+    color: white;
+}
