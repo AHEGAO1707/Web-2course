@@ -1,0 +1,31 @@
+$basicFont: "Rubik",
+sans-serif;
+body {
+    font-family: $basicFont;
+}
+
+.wrapper {
+    max-width: 1177px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.mb_30 {
+    margin-bottom: 30px !important;
+}
+
+.p0 {
+    padding: 0px !important;
+}

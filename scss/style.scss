@@ -1,0 +1,93 @@
+@use 'common';
+// Переменные
+$colorblue:red;
+$colorWhite: rgb(255, 255, 255);
+$colorMainTextWhite:rgb(225, 224, 224);
+$colorMainText:rgb(112, 112, 112);
+// Использование метода lighten из модуля color
+$colorGrey: lighten(rgb(64, 255, 0), 5%);
+// Вложенные правила
+.list_cards .container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 40px;
+    >div:hover {
+        background-color: $colorblue;
+        color: $colorWhite;
+        cursor: default;
+        &:hover p {
+            color: $colorMainText;
+        }
+    }
+}
+
+// Миксины
+@mixin base-style-font-blue {
+    font-family: $basicFont;
+    color: $colorblue;
+    font-size: 40px
+}
+
+.big-text {
+    @include base-style-font-blue;
+    text-transform: uppercase
+}
+
+.plain-text {
+    @include base-style-font-blue;
+}
+
+//Директивы
+.big-text-bold {
+    @extend .big-text;
+    font-weight: bold;
+}
+
+// map
+$map: ( colorblue:#082362, colorWhite: rgb(255, 255, 255), colorMainTextWhite:rgb(225, 224, 224), colorMainText:rgb(112, 112, 112));
+.colorblue-map {
+    color: map-get($map, colorblue);
+}
+
+.colorWhite-map {
+    color: map-get($map, colorWhite);
+    background-color: $colorblue;
+}
+
+.colorMainTextWhite-map {
+    color: map-get($map, colorMainTextWhite);
+}
+
+.colorMainText-map {
+    color: map-get($map, colorMainText);
+}
+
+// Вставка переменных
+.colorblue {
+    color: $colorblue;
+}
+
+.colorWhite {
+    color: $colorWhite;
+    background-color: $colorblue;
+}
+
+.colorMainTextWhite {
+    color: $colorMainTextWhite;
+}
+
+.colorMainText {
+    color: $colorMainText;
+}
+
+.colorGrey {
+    color: $colorGrey;
+}
+
+.title {
+    color: red;
+    display: block;
+    text-align: center;
+    margin: 30px 0;
+}
