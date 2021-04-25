@@ -32,17 +32,17 @@
 }
 
 #button-size-small {
-    font-size: 13px;
+    font-size: 0.7647rem;
     border: none;
 }
 
 #button-size-middle {
-    font-size: 18px;
+    font-size: 1.0588rem;
     border: none;
 }
 
 #button-size-large {
-    font-size: 23px;
+    font-size: 1.3529rem;
     border: none;
 }
 
@@ -71,15 +71,15 @@
 }
 
 .smallSize {
-    font-size: 15px;
+    font-size: 0.8824rem;
 }
 
 .middleSize {
-    font-size: 20px;
+    font-size: 1.1765rem;
 }
 
 .largeSize {
-    font-size: 25px;
+    font-size: 1.4706rem;
 }
 
 .multicoloredColor {

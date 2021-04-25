@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <title>Алексеев Егор Лаб 9</title>
@@ -16,21 +16,21 @@
             <span>
                 Размер шрифта:
             </span>
-            <button id="button-size-small" onclick="smallSize()">А</button>
-            <button id="button-size-middle" onclick="middleSize()">А</button>
-            <button id="button-size-large" onclick="largeSize()">А</button>
+            <button id="button-size-small" onclick="smallSize()" aria-label="МАЛЕНЬКИЙ ШРИФТ">А</button>
+            <button id="button-size-middle" onclick="middleSize()" aria-label="СРЕДНИЙ ШРИФТ">А</button>
+            <button id="button-size-large" onclick="largeSize()" aria-label="БОЛЬШОЙ ШРИФТ">А</button>
         </div>
         <div class="">
             <span>
                 Цветовая схема:
             </span>
-            <button id="button-color-white" onclick="whiteColor()">А</button>
-            <button id="button-color-black" onclick="blackColor()">А</button>
-            <button id="button-color-multicolored" onclick="multicoloredColor()">А</button>
+            <button id="button-color-white" onclick="whiteColor()" aria-label="БЕЛЫЙ ФОН">А</button>
+            <button id="button-color-black" onclick="blackColor()" aria-label="ЧЕРНЫЙ ФОН">А</button>
+            <button id="button-color-multicolored" onclick="multicoloredColor()" aria-label="ЯРКИЙ ФОН">А</button>
         </div>
     </div>
     <div class="container mt-5  mb-5">
-        <h2 class="blue toggleClass">Заголовок Заголовок Заголовок</h2>
+        <h1 class="blue toggleClass">Заголовок</h1>
         <div class="row main-text">
             <div class="col-sm-12  col-lg-4 block-text">
                 <p class="text-justify size">Задача организации, в особенности же новая модель организационной деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Повседневная практика показывает, что постоянное информационно-пропагандистское
@@ -50,7 +50,7 @@
 
         <audio src="audio/audio.mp3"></audio>
 
-        <h5 class="size">На изображениях ниже расположены svg картинки реализованные во второй лабораторной</h5>
+        <h1 class="size blue">Слайдер</h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -70,11 +70,11 @@
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="sr-only" aria-label="Предыдущий элемент">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="sr-only" aria-label="Следующий элемент">Next</span>
             </a>
         </div>
 
