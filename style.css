@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 ul {
     padding: 0;
@@ -264,8 +263,8 @@ header {
         letter-spacing: 1px;
         display: block;
         max-width: 200px;
-    margin: 0 auto;
-    text-align: center;
+        margin: 0 auto;
+        text-align: center;
     }
     .header-content {
         padding: 0;
@@ -552,17 +551,18 @@ header {
     max-width: 100%;
 }
 
-.main-foother-small{
+.main-foother-small {
     display: none;
 }
-.main-foother-content{
+
+.main-foother-content {
     display: grid;
     justify-content: center;
     height: 100%;
     align-items: center;
 }
 
-.main-foother-button{
+.main-foother-button {
     width: 170px;
     height: 50px;
     border: 2px solid #FF9A64;
@@ -572,8 +572,7 @@ header {
     font-size: 20px;
 }
 
-
-.main-foother-text{
+.main-foother-text {
     font-size: 30px;
     font-weight: 600;
     color: white;
@@ -583,38 +582,34 @@ header {
     line-height: 19px;
 }
 
-
-
-@media(max-width: 700px){
-    .main-foother{
+@media(max-width: 700px) {
+    .main-foother {
         display: none;
     }
     /* .main-foother img {
     max-width: 100%;
 } */
-.main-foother-small{
-    display: inline-block;
-    background: url(./img/main/9.png) no-repeat;
-    background-position: center;
-    height: 200px;
-    width: 100%;
-    padding: 40px 0;
+    .main-foother-small {
+        display: inline-block;
+        background: url(./img/main/9.png) no-repeat;
+        background-position: center;
+        height: 200px;
+        width: 100%;
+        padding: 40px 0;
+    }
 }
-}
 
-
-
-.item-one {
+.itemi-one {
     background: url(img/main/14.png);
     margin-bottom: 30px;
 }
 
-.item-two {
+.itemi-two {
     background: url(img/main/15.png);
     margin-bottom: 30px;
 }
 
-.item-theree {
+.itemi-theree {
     background: url(img/main/16.png);
 }
 
@@ -740,13 +735,13 @@ footer {
     color: white;
 }
 
-.main_bottom {
+.gallery {
     margin: 0 auto;
     max-width: 1200px;
     margin-top: 80px;
 }
 
-.main_bottom_rows {
+.gallery-rows {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, 270px);
@@ -754,39 +749,43 @@ footer {
     justify-content: center;
 }
 
-.main_bottom_item{
+.gallery-rows__item {
     height: 105px;
     width: 270px;
 }
 
-.main_bottom_content{
+.gallery-rows__content {
     display: none;
 }
-.main_bottom_item:hover {
+
+.gallery-rows__item:hover {
     transform: scale(1.15);
 }
 
-.main_bottom_item:hover .main_bottom_content{
+.gallery-rows__item:hover .gallery-rows__content {
     display: grid;
     justify-content: center;
     height: 100%;
     align-items: center;
 }
-.item-one{
+
+.item-one {
     background: url(img/main/10.png);
 }
-.item-two{
+
+.item-two {
     background: url(img/main/11.png);
 }
-.item-three{
+
+.item-three {
     background: url(img/main/12.png);
 }
-.item-four{
+
+.item-four {
     background: url(img/main/13.png);
 }
 
-
-.main_bottom_text{
+.gallery-rows__text_opacity {
     font-size: 16px;
     font-weight: 600;
     color: white;
@@ -796,7 +795,7 @@ footer {
     line-height: 19px;
 }
 
-.main_bottom_button{
+.gallery-rows__button_opacity {
     width: 110px;
     height: 30px;
     border: 2px solid white;
@@ -810,11 +809,14 @@ footer {
 }
 
 @media (max-width: 1200px) {
-    .main-bottom {
+    .gallery {
         max-width: 770px;
     }
-    .main_bottom_rows {
+    .gallery-rows {
         margin: 0 auto;
+    }
+    footer {
+        display: none;
     }
 }
 
@@ -824,10 +826,10 @@ footer {
         width: 90%;
         margin: 0 auto;
     }
-    .main_bottom_rows {
+    .gallery-rows {
         display: none;
     }
-    .main-bottom {
+    .gallery {
         margin-bottom: 30px;
     }
 }
@@ -871,10 +873,11 @@ footer {
 }
 
 @media (max-width: 1000px) {
-.home {
-    margin-top: -30px;
+    .home {
+        margin-top: -30px;
+    }
 }
-}
+
 @media (max-width: 400px) {
     .main {
         margin-top: 0px;
